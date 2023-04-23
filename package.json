@@ -1,7 +1,11 @@
 {
   "name": "react-modern-icons",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qasimali09/react-modern-icons.git"
+  },
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
@@ -14,6 +18,8 @@
     "build": "yarn build:esm && yarn build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "prepublishOnly": "yarn build",
+    "prepare": "yarn build",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src",
     "format": "prettier --write src/**/*.{js,jsx,ts,tsx}"
   },
