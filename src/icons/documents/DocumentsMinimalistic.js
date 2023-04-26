@@ -6,36 +6,36 @@ function DocumentsMinimalistic({ color, strokeWidth, varient }) {
   const defaultIcon = () => (
     <g>
       <path
-        d="M4 7C4 4.17157 4 2.75736 4.87868 1.87868C5.75736 1 7.17157 1 10 1H12C14.8284 1 16.2426 1 17.1213 1.87868C18 2.75736 18 4.17157 18 7V15C18 17.8284 18 19.2426 17.1213 20.1213C16.2426 21 14.8284 21 12 21H10C7.17157 21 5.75736 21 4.87868 20.1213C4 19.2426 4 17.8284 4 15V7Z"
+        d="M5 8C5 5.17157 5 3.75736 5.87868 2.87868C6.75736 2 8.17157 2 11 2H13C15.8284 2 17.2426 2 18.1213 2.87868C19 3.75736 19 5.17157 19 8V16C19 18.8284 19 20.2426 18.1213 21.1213C17.2426 22 15.8284 22 13 22H11C8.17157 22 6.75736 22 5.87868 21.1213C5 20.2426 5 18.8284 5 16V8Z"
         stroke={color}
         strokeWidth={strokeWidth}
       />
       <path
-        d="M8 12H14"
-        stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-      />
-      <path
-        d="M8 8H14"
+        d="M9 13H15"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
       />
       <path
-        d="M8 16H11"
+        d="M9 9H15"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
       />
       <path
-        d="M1 18V4"
+        d="M9 17H12"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
       />
       <path
-        d="M21 18V4"
+        d="M2 19V5"
+        stroke={color}
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+      />
+      <path
+        d="M22 19V5"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
@@ -48,64 +48,20 @@ function DocumentsMinimalistic({ color, strokeWidth, varient }) {
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M9.75 0H11.75C14.5784 0 15.9926 0 16.8713 0.87868C17.75 1.75736 17.75 3.17157 17.75 6V14C17.75 16.8284 17.75 18.2426 16.8713 19.1213C15.9926 20 14.5784 20 11.75 20H9.75C6.92157 20 5.50736 20 4.62868 19.1213C3.75 18.2426 3.75 16.8284 3.75 14V6C3.75 3.17157 3.75 1.75736 4.62868 0.87868C5.50736 0 6.92157 0 9.75 0ZM7 11C7 10.5858 7.33579 10.25 7.75 10.25H13.75C14.1642 10.25 14.5 10.5858 14.5 11C14.5 11.4142 14.1642 11.75 13.75 11.75H7.75C7.33579 11.75 7 11.4142 7 11ZM7 7C7 6.58579 7.33579 6.25 7.75 6.25H13.75C14.1642 6.25 14.5 6.58579 14.5 7C14.5 7.41421 14.1642 7.75 13.75 7.75H7.75C7.33579 7.75 7 7.41421 7 7ZM7 15C7 14.5858 7.33579 14.25 7.75 14.25H10.75C11.1642 14.25 11.5 14.5858 11.5 15C11.5 15.4142 11.1642 15.75 10.75 15.75H7.75C7.33579 15.75 7 15.4142 7 15Z"
+        d="M10.75 2H12.75C15.5784 2 16.9926 2 17.8713 2.87868C18.75 3.75736 18.75 5.17157 18.75 8V16C18.75 18.8284 18.75 20.2426 17.8713 21.1213C16.9926 22 15.5784 22 12.75 22H10.75C7.92157 22 6.50736 22 5.62868 21.1213C4.75 20.2426 4.75 18.8284 4.75 16V8C4.75 5.17157 4.75 3.75736 5.62868 2.87868C6.50736 2 7.92157 2 10.75 2ZM8 13C8 12.5858 8.33579 12.25 8.75 12.25H14.75C15.1642 12.25 15.5 12.5858 15.5 13C15.5 13.4142 15.1642 13.75 14.75 13.75H8.75C8.33579 13.75 8 13.4142 8 13ZM8 9C8 8.58579 8.33579 8.25 8.75 8.25H14.75C15.1642 8.25 15.5 8.58579 15.5 9C15.5 9.41421 15.1642 9.75 14.75 9.75H8.75C8.33579 9.75 8 9.41421 8 9ZM8 17C8 16.5858 8.33579 16.25 8.75 16.25H11.75C12.1642 16.25 12.5 16.5858 12.5 17C12.5 17.4142 12.1642 17.75 11.75 17.75H8.75C8.33579 17.75 8 17.4142 8 17Z"
         fill={color}
       />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M0.75 2.25C1.16421 2.25 1.5 2.58579 1.5 3V17C1.5 17.4142 1.16421 17.75 0.75 17.75C0.335786 17.75 0 17.4142 0 17V3C0 2.58579 0.335786 2.25 0.75 2.25Z"
+        d="M1.75 4.25C2.16421 4.25 2.5 4.58579 2.5 5V19C2.5 19.4142 2.16421 19.75 1.75 19.75C1.33579 19.75 1 19.4142 1 19V5C1 4.58579 1.33579 4.25 1.75 4.25Z"
         fill={color}
       />
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M20.75 2.25C21.1642 2.25 21.5 2.58579 21.5 3V17C21.5 17.4142 21.1642 17.75 20.75 17.75C20.3358 17.75 20 17.4142 20 17V3C20 2.58579 20.3358 2.25 20.75 2.25Z"
+        d="M21.75 4.25C22.1642 4.25 22.5 4.58579 22.5 5V19C22.5 19.4142 22.1642 19.75 21.75 19.75C21.3358 19.75 21 19.4142 21 19V5C21 4.58579 21.3358 4.25 21.75 4.25Z"
         fill={color}
-      />
-    </g>
-  );
-
-  const duotoneIcon = () => (
-    <g>
-      <path
-        d="M4 7C4 4.17157 4 2.75736 4.87868 1.87868C5.75736 1 7.17157 1 10 1H12C14.8284 1 16.2426 1 17.1213 1.87868C18 2.75736 18 4.17157 18 7V15C18 17.8284 18 19.2426 17.1213 20.1213C16.2426 21 14.8284 21 12 21H10C7.17157 21 5.75736 21 4.87868 20.1213C4 19.2426 4 17.8284 4 15V7Z"
-        stroke={color}
-        strokeWidth={strokeWidth}
-      />
-      <path
-        opacity="0.7"
-        d="M8 12H14"
-        stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-      />
-      <path
-        d="M8 8H14"
-        stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-      />
-      <path
-        opacity="0.4"
-        d="M8 16H11"
-        stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-      />
-      <path
-        opacity="0.5"
-        d="M1 18V4"
-        stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-      />
-      <path
-        opacity="0.5"
-        d="M21 18V4"
-        stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
       />
     </g>
   );
@@ -119,8 +75,6 @@ function DocumentsMinimalistic({ color, strokeWidth, varient }) {
       return defaultIcon();
     case 'filled':
       return filledIcon();
-    case 'duotone':
-      return duotoneIcon();
     default:
       return defaultIcon();
   }
@@ -131,7 +85,7 @@ export default generateIcon(DocumentsMinimalistic);
 DocumentsMinimalistic.propTypes = {
   color: PropTypes.string,
   strokeWidth: PropTypes.string,
-  varient: PropTypes.oneOf(['light', 'regular', 'bold', 'filled', 'duotone']),
+  varient: PropTypes.oneOf(['light', 'regular', 'bold', 'filled']),
 };
 
 DocumentsMinimalistic.defaultProps = {

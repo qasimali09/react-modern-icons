@@ -9,7 +9,7 @@ const generateIcon = (PathsGroup) => {
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 22 22"
+        viewBox="0 0 24 24"
         width={size}
         height={size}
         aria-label={title || undefined}
@@ -26,7 +26,7 @@ const generateIcon = (PathsGroup) => {
   Icon.propTypes = {
     color: PropTypes.string,
     size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-    varient: PropTypes.oneOf(['light', 'regular', 'bold', 'filled', 'duotone']),
+    varient: PropTypes.oneOf(['light', 'regular', 'bold', 'filled']),
     title: PropTypes.string,
     style: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
     className: PropTypes.string,

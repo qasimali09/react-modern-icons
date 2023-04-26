@@ -6,24 +6,24 @@ function DocumentText({ color, strokeWidth, varient }) {
   const defaultIcon = () => (
     <g>
       <path
-        d="M1 9C1 5.22876 1 3.34315 2.17157 2.17157C3.34315 1 5.22876 1 9 1H11C14.7712 1 16.6569 1 17.8284 2.17157C19 3.34315 19 5.22876 19 9V13C19 16.7712 19 18.6569 17.8284 19.8284C16.6569 21 14.7712 21 11 21H9C5.22876 21 3.34315 21 2.17157 19.8284C1 18.6569 1 16.7712 1 13V9Z"
+        d="M3 10C3 6.22876 3 4.34315 4.17157 3.17157C5.34315 2 7.22876 2 11 2H13C16.7712 2 18.6569 2 19.8284 3.17157C21 4.34315 21 6.22876 21 10V14C21 17.7712 21 19.6569 19.8284 20.8284C18.6569 22 16.7712 22 13 22H11C7.22876 22 5.34315 22 4.17157 20.8284C3 19.6569 3 17.7712 3 14V10Z"
         stroke={color}
         strokeWidth={strokeWidth}
       />
       <path
-        d="M6 11H14"
-        stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-      />
-      <path
-        d="M6 7H14"
+        d="M8 12H16"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
       />
       <path
-        d="M6 15H11"
+        d="M8 8H16"
+        stroke={color}
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+      />
+      <path
+        d="M8 16H13"
         stroke={color}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
@@ -36,37 +36,8 @@ function DocumentText({ color, strokeWidth, varient }) {
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M1.17157 1.17157C0 2.34315 0 4.22876 0 8V12C0 15.7712 0 17.6569 1.17157 18.8284C2.34315 20 4.22876 20 8 20H10C13.7712 20 15.6569 20 16.8284 18.8284C18 17.6569 18 15.7712 18 12V8C18 4.22876 18 2.34315 16.8284 1.17157C15.6569 0 13.7712 0 10 0H8C4.22876 0 2.34315 0 1.17157 1.17157ZM4.25 6C4.25 5.58579 4.58579 5.25 5 5.25H13C13.4142 5.25 13.75 5.58579 13.75 6C13.75 6.41421 13.4142 6.75 13 6.75H5C4.58579 6.75 4.25 6.41421 4.25 6ZM4.25 10C4.25 9.58579 4.58579 9.25 5 9.25H13C13.4142 9.25 13.75 9.58579 13.75 10C13.75 10.4142 13.4142 10.75 13 10.75H5C4.58579 10.75 4.25 10.4142 4.25 10ZM5 13.25C4.58579 13.25 4.25 13.5858 4.25 14C4.25 14.4142 4.58579 14.75 5 14.75H10C10.4142 14.75 10.75 14.4142 10.75 14C10.75 13.5858 10.4142 13.25 10 13.25H5Z"
+        d="M4.17157 3.17157C3 4.34315 3 6.22876 3 10V14C3 17.7712 3 19.6569 4.17157 20.8284C5.34315 22 7.22876 22 11 22H13C16.7712 22 18.6569 22 19.8284 20.8284C21 19.6569 21 17.7712 21 14V10C21 6.22876 21 4.34315 19.8284 3.17157C18.6569 2 16.7712 2 13 2H11C7.22876 2 5.34315 2 4.17157 3.17157ZM7.25 8C7.25 7.58579 7.58579 7.25 8 7.25H16C16.4142 7.25 16.75 7.58579 16.75 8C16.75 8.41421 16.4142 8.75 16 8.75H8C7.58579 8.75 7.25 8.41421 7.25 8ZM7.25 12C7.25 11.5858 7.58579 11.25 8 11.25H16C16.4142 11.25 16.75 11.5858 16.75 12C16.75 12.4142 16.4142 12.75 16 12.75H8C7.58579 12.75 7.25 12.4142 7.25 12ZM8 15.25C7.58579 15.25 7.25 15.5858 7.25 16C7.25 16.4142 7.58579 16.75 8 16.75H13C13.4142 16.75 13.75 16.4142 13.75 16C13.75 15.5858 13.4142 15.25 13 15.25H8Z"
         fill={color}
-      />
-    </g>
-  );
-
-  const duotoneIcon = () => (
-    <g>
-      <path
-        opacity="0.5"
-        d="M1 9C1 5.22876 1 3.34315 2.17157 2.17157C3.34315 1 5.22876 1 9 1H11C14.7712 1 16.6569 1 17.8284 2.17157C19 3.34315 19 5.22876 19 9V13C19 16.7712 19 18.6569 17.8284 19.8284C16.6569 21 14.7712 21 11 21H9C5.22876 21 3.34315 21 2.17157 19.8284C1 18.6569 1 16.7712 1 13V9Z"
-        stroke={color}
-        strokeWidth={strokeWidth}
-      />
-      <path
-        d="M6 11H14"
-        stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-      />
-      <path
-        d="M6 7H14"
-        stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
-      />
-      <path
-        d="M6 15H11"
-        stroke={color}
-        strokeWidth={strokeWidth}
-        strokeLinecap="round"
       />
     </g>
   );
@@ -80,8 +51,6 @@ function DocumentText({ color, strokeWidth, varient }) {
       return defaultIcon();
     case 'filled':
       return filledIcon();
-    case 'duotone':
-      return duotoneIcon();
     default:
       return defaultIcon();
   }
@@ -92,7 +61,7 @@ export default generateIcon(DocumentText);
 DocumentText.propTypes = {
   color: PropTypes.string,
   strokeWidth: PropTypes.string,
-  varient: PropTypes.oneOf(['light', 'regular', 'bold', 'filled', 'duotone']),
+  varient: PropTypes.oneOf(['light', 'regular', 'bold', 'filled']),
 };
 
 DocumentText.defaultProps = {
