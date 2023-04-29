@@ -12,6 +12,7 @@ const generateIcon = (PathsGroup) => {
         viewBox="0 0 24 24"
         width={size}
         height={size}
+        fill="none"
         aria-label={title || undefined}
         {...(style ? { style } : {})}
         {...(className ? { className } : {})}

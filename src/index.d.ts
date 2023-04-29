@@ -44,3 +44,7 @@ export const DocumentText: React.FC<IconProps>;
 export const Notebook: React.FC<IconProps>;
 export const Notes: React.FC<IconProps>;
 export const NotesMinimalistic: React.FC<IconProps>;
+
+// types for weather icons
+export const Sun: React.FC<IconProps>;
+export const Moon: React.FC<IconProps>;
