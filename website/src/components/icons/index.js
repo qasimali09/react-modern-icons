@@ -4,8 +4,9 @@ import { Grid, GridItem } from '@chakra-ui/react';
 import * as iconLists from 'react-modern-icons';
 import IconBox from './iconBox';
 import { useToast, useClipboard } from '@chakra-ui/react';
+import PropTypes from 'prop-types';
 
-const Icons = () => {
+const Icons = ({ variant }) => {
   // eslint-disable-next-line no-unused-vars
   const [icons, setIcons] = useState(Object.keys(iconLists));
   const toast = useToast();
@@ -41,7 +42,7 @@ const Icons = () => {
         const Icon = iconLists[icon];
         return (
           <GridItem onCopy={handleCopy} as={IconBox} name={icon} key={icon}>
-            <Icon />
+            <Icon variant={variant} />
           </GridItem>
         );
       })}
@@ -50,3 +51,7 @@ const Icons = () => {
 };
 
 export default Icons;
+
+Icons.propTypes = {
+  variant: PropTypes.string.isRequired,
+};

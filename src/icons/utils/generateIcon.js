@@ -3,9 +3,9 @@ import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 
 const generateIcon = (PathsGroup) => {
-  function Icon({ color, size, varient, className, style, title, ...rest }) {
+  function Icon({ color, size, variant, className, style, title, ...rest }) {
     const strokeWidth =
-      varient === 'light' ? '1' : varient === 'bold' ? '2' : '1.5';
+      variant === 'light' ? '1' : variant === 'bold' ? '2' : '1.5';
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -19,7 +19,7 @@ const generateIcon = (PathsGroup) => {
         {...rest}
       >
         {title ? <title>{title}</title> : null}
-        <PathsGroup color={color} strokeWidth={strokeWidth} varient={varient} />
+        <PathsGroup color={color} strokeWidth={strokeWidth} variant={variant} />
       </svg>
     );
   }
@@ -27,7 +27,7 @@ const generateIcon = (PathsGroup) => {
   Icon.propTypes = {
     color: PropTypes.string,
     size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-    varient: PropTypes.oneOf(['light', 'regular', 'bold', 'filled']),
+    variant: PropTypes.oneOf(['light', 'regular', 'bold', 'filled']),
     title: PropTypes.string,
     style: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
     className: PropTypes.string,
@@ -37,7 +37,7 @@ const generateIcon = (PathsGroup) => {
     color: 'currentColor',
     size: '1em',
     title: null,
-    varient: 'regular',
+    variant: 'regular',
     style: {},
     className: '',
   };

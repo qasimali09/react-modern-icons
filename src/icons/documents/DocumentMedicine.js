@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import generateIcon from '../utils/generateIcon';
 
-function DocumentMedicine({ color, strokeWidth, varient }) {
+function DocumentMedicine({ color, strokeWidth, variant }) {
   const defaultIcon = () => (
     <g>
       <path
@@ -42,7 +42,7 @@ function DocumentMedicine({ color, strokeWidth, varient }) {
     </g>
   );
 
-  switch (varient) {
+  switch (variant) {
     case 'light':
       return defaultIcon();
     case 'regular':
@@ -61,11 +61,11 @@ export default generateIcon(DocumentMedicine);
 DocumentMedicine.propTypes = {
   color: PropTypes.string,
   strokeWidth: PropTypes.string,
-  varient: PropTypes.oneOf(['light', 'regular', 'bold', 'filled']),
+  variant: PropTypes.oneOf(['light', 'regular', 'bold', 'filled']),
 };
 
 DocumentMedicine.defaultProps = {
   color: 'currentColor',
   strokeWidth: '1.5px',
-  varient: 'regular',
+  variant: 'regular',
 };

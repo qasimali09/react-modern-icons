@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Icons from '../components/icons';
 import { Container, Box } from '@chakra-ui/react';
 import Aside from '../components/aside';
+import Filter from '../components/icons/filter';
 
 const HomePage = () => {
+  const [variant, setVariant] = useState('regular');
   return (
     <Container
       alignItems="flex-start"
@@ -24,7 +26,8 @@ const HomePage = () => {
           },
         }}
       >
-        <Icons />
+        <Filter variant={variant} setVariant={setVariant} />
+        <Icons variant={variant} />
       </Box>
       <Box
         sx={{

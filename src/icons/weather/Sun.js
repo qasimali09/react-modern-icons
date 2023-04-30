@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import generateIcon from '../utils/generateIcon';
 
-function Sun({ color, strokeWidth, varient }) {
+function Sun({ color, strokeWidth, variant }) {
   const defaultIcon = () => (
     <g>
       <circle cx="12" cy="12" r="6" stroke={color} strokeWidth={strokeWidth} />
@@ -72,7 +72,7 @@ function Sun({ color, strokeWidth, varient }) {
     </g>
   );
 
-  switch (varient) {
+  switch (variant) {
     case 'light':
       return defaultIcon();
     case 'regular':
@@ -91,11 +91,11 @@ export default generateIcon(Sun);
 Sun.propTypes = {
   color: PropTypes.string,
   strokeWidth: PropTypes.string,
-  varient: PropTypes.oneOf(['light', 'regular', 'bold', 'filled']),
+  variant: PropTypes.oneOf(['light', 'regular', 'bold', 'filled']),
 };
 
 Sun.defaultProps = {
   color: 'currentColor',
   strokeWidth: '1.5px',
-  varient: 'regular',
+  variant: 'regular',
 };

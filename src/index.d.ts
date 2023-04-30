@@ -5,7 +5,7 @@ type Color = 'currentColor' | string;
 export interface IconProps {
   color?: Color;
   size?: number | string;
-  varient?: 'light' | 'regular' | 'bold' | 'filled';
+  variant?: 'light' | 'regular' | 'bold' | 'filled';
   style?: CSSProperties;
   title?: string;
   className?: string;

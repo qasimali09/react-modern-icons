@@ -30,7 +30,7 @@ function MyComponent() {
       <NotificationUnread
         color='#000000'
         size={30}
-        varient='filled'
+        variant='filled'
       />
   )
 }
@@ -53,7 +53,7 @@ The package also provides options to customize the size, color, and other proper
 |----------|---------|----------|
 | color  | `string`  | `currentColor`  |
 | size  | `(number or string)`  | `1em`  |
-| varient  | `light` `regular` `bold` `filled` `duotone` | `regular`  |
+| variant  | `light` `regular` `bold` `filled` `duotone` | `regular`  |
 | title  | `string`  |   |
 | className  | `string`  |   |
 | style  | `object`  |   |

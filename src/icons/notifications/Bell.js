@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import generateIcon from '../utils/generateIcon';
 
-function Bell({ color, strokeWidth, varient }) {
+function Bell({ color, strokeWidth, variant }) {
   const defaultIcon = () => (
     <g>
       <path
@@ -32,7 +32,7 @@ function Bell({ color, strokeWidth, varient }) {
     </g>
   );
 
-  switch (varient) {
+  switch (variant) {
     case 'light':
       return defaultIcon();
     case 'regular':
@@ -51,11 +51,11 @@ export default generateIcon(Bell);
 Bell.propTypes = {
   color: PropTypes.string,
   strokeWidth: PropTypes.string,
-  varient: PropTypes.oneOf(['light', 'regular', 'bold', 'filled']),
+  variant: PropTypes.oneOf(['light', 'regular', 'bold', 'filled']),
 };
 
 Bell.defaultProps = {
   color: 'currentColor',
   strokeWidth: '1.5px',
-  varient: 'regular',
+  variant: 'regular',
 };

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import generateIcon from '../utils/generateIcon';
 
-function BellBing({ color, strokeWidth, varient }) {
+function BellBing({ color, strokeWidth, variant }) {
   const defaultIcon = () => (
     <g>
       <path
@@ -40,7 +40,7 @@ function BellBing({ color, strokeWidth, varient }) {
     </g>
   );
 
-  switch (varient) {
+  switch (variant) {
     case 'light':
       return defaultIcon();
     case 'regular':
@@ -59,11 +59,11 @@ export default generateIcon(BellBing);
 BellBing.propTypes = {
   color: PropTypes.string,
   strokeWidth: PropTypes.string,
-  varient: PropTypes.oneOf(['light', 'regular', 'bold', 'filled']),
+  variant: PropTypes.oneOf(['light', 'regular', 'bold', 'filled']),
 };
 
 BellBing.defaultProps = {
   color: 'currentColor',
   strokeWidth: '1.5px',
-  varient: 'regular',
+  variant: 'regular',
 };

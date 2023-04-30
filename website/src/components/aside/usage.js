@@ -16,7 +16,7 @@ import { Icon } from 'react-modern-icons';
 
 const App = () => {
   return (
-    <Icon varient="filled" size={30} />
+    <Icon variant="filled" size={30} />
   );
 };
 

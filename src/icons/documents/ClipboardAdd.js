@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import generateIcon from '../utils/generateIcon';
 
-function ClipboardAdd({ color, strokeWidth, varient }) {
+function ClipboardAdd({ color, strokeWidth, variant }) {
   const defaultIcon = () => (
     <g>
       <path
@@ -39,7 +39,7 @@ function ClipboardAdd({ color, strokeWidth, varient }) {
     </g>
   );
 
-  switch (varient) {
+  switch (variant) {
     case 'light':
       return defaultIcon();
     case 'regular':
@@ -58,11 +58,11 @@ export default generateIcon(ClipboardAdd);
 ClipboardAdd.propTypes = {
   color: PropTypes.string,
   strokeWidth: PropTypes.string,
-  varient: PropTypes.oneOf(['light', 'regular', 'bold', 'filled']),
+  variant: PropTypes.oneOf(['light', 'regular', 'bold', 'filled']),
 };
 
 ClipboardAdd.defaultProps = {
   color: 'currentColor',
   strokeWidth: '1.5px',
-  varient: 'regular',
+  variant: 'regular',
 };
