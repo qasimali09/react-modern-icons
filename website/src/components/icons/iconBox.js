@@ -19,6 +19,13 @@ const IconBox = ({ children, name, onCopy }) => {
           height: '80px',
           fontSize: '3xl',
           cursor: 'pointer',
+          transition: '0.2s transform',
+          _hover: {
+            transform: 'scale(1.05)',
+          },
+          _active: {
+            transform: 'scale(0.95)',
+          },
         }}
         onClick={() => onCopy(name)}
       >

@@ -24,7 +24,6 @@ const Header = () => {
         backdropFilter: 'blur(5px)',
         borderBottom: '1px solid',
         borderColor: useColorModeValue('gray.50', 'gray.600'),
-        px: 4,
         py: 2,
       }}
     >
