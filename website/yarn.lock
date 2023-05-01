@@ -8631,10 +8631,10 @@ react-is@^18.0.0:
   resolved "https://registry.npmjs.org/react-is/-/react-is-18.2.0.tgz"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
-react-modern-icons@^1.2.4:
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/react-modern-icons/-/react-modern-icons-1.2.4.tgz#52b3a17a923942798a75307370e446d5e08c24f5"
-  integrity sha512-N3uphZ4o2FCrgD7k79XgDyfWHWXIIkuQlK3YJuYIfkM80o8woxEq+3AAbnwA/om+mIdDF4CMSYAD2pBinnucVg==
+react-modern-icons@^1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/react-modern-icons/-/react-modern-icons-1.2.5.tgz#83b0a45d3ae547d4165b8a780456b0bd5df24984"
+  integrity sha512-soNs6rPXEF10gI03Hx/Pe5iwj1IaTffhfI62gT32J9qZZmWghXaIZSGJuZJ3Y24KoVw67dQleU4Fl0tEQwltrg==
   dependencies:
     prop-types "^15.8.1"
 
