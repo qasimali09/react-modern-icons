@@ -6,6 +6,8 @@ import Filter from '../components/icons/filter';
 
 const HomePage = () => {
   const [variant, setVariant] = useState('regular');
+  const [search, setSearch] = useState('');
+
   return (
     <Container
       alignItems="flex-start"
@@ -14,7 +16,7 @@ const HomePage = () => {
       maxW="container.xl"
       pt="100px"
       flexDirection={{
-        base: 'column-reverse',
+        base: 'column',
         md: 'row',
       }}
     >
@@ -26,8 +28,13 @@ const HomePage = () => {
           },
         }}
       >
-        <Filter variant={variant} setVariant={setVariant} />
-        <Icons variant={variant} />
+        <Filter
+          search={search}
+          setSearch={setSearch}
+          variant={variant}
+          setVariant={setVariant}
+        />
+        <Icons search={search} variant={variant} />
       </Box>
       <Box
         sx={{
@@ -39,7 +46,7 @@ const HomePage = () => {
             base: 0,
             md: '30px',
           },
-          pb: {
+          pt: {
             base: '30px',
             md: 0,
           },

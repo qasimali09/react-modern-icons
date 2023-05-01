@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import {
   Box,
   InputGroup,
@@ -11,16 +11,39 @@ import PropTypes from 'prop-types';
 
 const variants = ['light', 'regular', 'bold', 'filled'];
 
-const Filter = ({ setVariant, variant }) => {
+const Filter = ({ setVariant, variant, search, setSearch }) => {
+  const inputRef = useRef(null);
+
   const btnColor = useColorModeValue('gray.400', 'gray.400');
   const activeBtnColor = useColorModeValue('gray.800', 'gray.200');
   const activeBtnBgColor = useColorModeValue('gray.50', 'gray.600');
+
+  React.useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'f' && e.metaKey) {
+        e.preventDefault();
+        inputRef.current.focus();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
   return (
     <Box
       sx={{
         mb: '30px',
         display: 'flex',
-        alignItems: 'center',
+        alignItems: {
+          base: 'flex-start',
+          sm: 'center',
+        },
+        flexDirection: {
+          base: 'column',
+          sm: 'row',
+        },
       }}
     >
       <InputGroup
@@ -29,6 +52,9 @@ const Filter = ({ setVariant, variant }) => {
         }}
       >
         <Input
+          ref={inputRef}
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
           sx={{
             bgColor: 'transparent',
             position: 'relative',
@@ -65,7 +91,14 @@ const Filter = ({ setVariant, variant }) => {
         sx={{
           display: 'flex',
           alignItems: 'center',
-          ml: 4,
+          ml: {
+            base: 0,
+            sm: 4,
+          },
+          mt: {
+            base: 4,
+            sm: 0,
+          },
           gap: '5px',
           borderRadius: 'md',
           border: '1px solid',
@@ -104,4 +137,6 @@ export default Filter;
 Filter.propTypes = {
   setVariant: PropTypes.func.isRequired,
   variant: PropTypes.string.isRequired,
+  search: PropTypes.string.isRequired,
+  setSearch: PropTypes.func.isRequired,
 };
